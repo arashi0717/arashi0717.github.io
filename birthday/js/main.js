@@ -32,3 +32,7 @@ function requestFullScreen(element) {
 		}
 	}
 }
+
+$(document).ready(function(){
+	$("#lable1").fadeIn(5000);
+});

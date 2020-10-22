@@ -63,7 +63,9 @@ body :-ms-input-placeholder {
   height: 400px;
   text-align: center;
 }
-.container h1 {
+.container li {
+  list-style: none;
+  display: inline;
   font-size: 40px;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
