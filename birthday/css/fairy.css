@@ -54,8 +54,31 @@ body :-ms-input-placeholder {
     overflow: hidden;
 }
 
-#fairy_title{
-    margin-top: 30px;
+#message{
+    margin-top: 80px;
     font-family: mytitlefont;
     text-align: center;
 }
+
+button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: 0;
+    background-color: white;
+    font-family: "Microsoft YaHei";
+    border: 0;
+    padding: 10px 15px;
+    color: #ee9ca7;
+    border-radius: 3px;
+    width: 200px;
+    margin: 30px auto;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+  }
+  button:hover {
+    background-color: #f5f7f9;
+  }

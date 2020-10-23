@@ -1,58 +1,50 @@
 $(document).ready(function(){
 	if($("body").outerWidth()<=576){
-		$("#title1 .col").css({
-			"font-size": "32px",
-			"padding":"0px"
-		});
+		$("#title1 div").css("font-size","25px");
+		$(".fairy span").css("font-size","15px");
 	}else{
-		$("#title1 .col").css("font-size", "40px");
+		$("#title1 div").css("font-size","30px");
+		$(".fairy span").css("font-size","20px");
 	}
-	$("#title1").fadeIn(2000);
-	// $("#title1").show();
-	// $(".wodry").wodry({
-	// 	animation: 'rotateY',
-	// 	delay:1000,
-	// 	animationDuration:500
-	// });
+	$("#title1").fadeOut(3500);
 	setTimeout(function(){
 		if($("body").outerWidth()<=576){
-			$("#title2").show().animate({fontSize:'15px'},1000);
-		}else{
 			$("#title2").show().animate({fontSize:'20px'},1000);
+		}else{
+			$("#title2").show().animate({fontSize:'25px'},1000);
 		}
 		setTimeout(function(){
-			$("#fairy1").removeAttr("hidden");
-			$("#fairy2").removeAttr("hidden");
-			$("#fairy3").removeAttr("hidden");
-			$("#fairy4").removeAttr("hidden");
+			$(".fairy").fadeIn(2000);
 		},1500)
-	},2500);
+	},4000);
 });
 
 $(window).resize(function(){
 	if($("body").outerWidth()<=576){
-		$("#title1 .col").css("font-size", "32px");
-		$("#title2").css("font-size","15px");
+		$("#title1 div").css("font-size", "20px");
+		$("#title2").css("font-size","20px");
+		$(".fairy span").css("font-size","15px");
 	}else{
-		$("#title1 .col").css("font-size", "40px");
-		$("#title2").css("font-size", "20px");
+		$("#title1 div").css("font-size", "30px");
+		$("#title2").css("font-size", "25px");
+		$(".fairy span").css("font-size","20px");
 	}
 });
 
 $('#fairy1').click(function () {
 	setTimeout(function () {
-		location.href = "fairy1.html";
+		location.href = "fairy.html";
 	}, 500);
 });
 
 $('#fairy2').click(function () {
 	setTimeout(function () {
-		location.href = "fairy2.html";
+		location.href = "fairy.html";
 	}, 500);
 });
 
-$('#fairy3').click(function () {
+$('#fairy4').click(function () {
 	setTimeout(function () {
-		location.href = "fairy3.html";
+		location.href = "fairy.html";
 	}, 500);
 });

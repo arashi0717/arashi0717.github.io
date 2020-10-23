@@ -5,10 +5,6 @@
   padding: 0;
   font-weight: 300;
 }
-@font-face {
-  font-family: mytitlefont;
-  src: url(../font/HuaWeiYuanQiShaoNvTi.ttf);
-}
 body {
   font-family:"Microsoft YaHei";
   color: white;
@@ -51,6 +47,7 @@ body :-ms-input-placeholder {
   width: 100%;
   height: 100%;
   overflow: hidden;
+
 }
 
 .wrapper.form-success .container h1 {
@@ -59,46 +56,79 @@ body :-ms-input-placeholder {
           transform: translateY(85px);
 }
 .container {
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
   margin-top: 7%;
-  padding: 50px 0;
-  height: 500px;
+  padding: 80px 0;
+  height: 400px;
   text-align: center;
 }
-/* .container .row {
-  margin-top: 30px;
-} */
-.container #title1 {
-  margin-top: -30px;
+.container #title{
+  display: none;
+  margin-bottom: 20px;
 }
-.container #title1 div{
-  margin-top: 5px;
+.container .row:nth-child(1) .col{
+  /* display: inline; */
   font-family: mytitlefont;
-  font-size: 25px;
+  font-size: 40px;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   -webkit-transition-timing-function: ease-in-put;
           transition-timing-function: ease-in-put;
   font-weight: 200;
 }
-.container #title2{
-  font-size: 5px;
-  display: none;
-}
-.archive{
+
+form {
+  padding: 20px 0;
+  margin: 0 auto;
   position: relative;
-  margin-top: 40px;
-}
-.fairy {
-  padding: 30px;
-  margin: 10px;
-  border: #faebd7 2px solid;
-  border-radius: 5px;
   display: none;
 }
-.fairy span{
-  margin: 5px;
+form input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  font-size: 18px;
   color: white;
-  font-size: 15px;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  font-weight: 300;
+}
+form input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+form input:focus {
+  background-color: white;
+  width: 300px;
+  color: #ee9ca7;
+}
+form button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  background-color: white;
+  font-family: "Microsoft YaHei";
+  border: 0;
+  padding: 10px 15px;
+  color: #ee9ca7;
+  border-radius: 3px;
+  width: 250px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+form button:hover {
+  background-color: #f5f7f9;
 }
