@@ -4,7 +4,11 @@ function changeFrameSize(){
 	ifm.height = document.documentElement.clientHeight;
 	ifm.width = document.documentElement.clientWidth;
 	//去掉空白处
-	$(".container-fluid").css({"margin":"0","padding":"0"});
+	$(".container-fluid").css({
+		"margin": "0",
+		"padding": "0",
+		"height": ifm.height
+	});
 }
 
 window.onresize = function() {
