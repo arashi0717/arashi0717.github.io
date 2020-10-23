@@ -69,12 +69,12 @@ body :-ms-input-placeholder {
 /* .container .row {
   margin-top: 30px;
 } */
-.container .row:nth-child(1){
+.container #title1{
   display: none;
   margin-bottom: 20px;
 }
 .container .row:nth-child(1) .col{
-  display: inline;
+  /* display: inline; */
   font-family: mytitlefont;
   font-size: 40px;
   -webkit-transition-duration: 1s;

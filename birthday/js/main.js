@@ -7,7 +7,7 @@ $(document).ready(function(){
 	}else{
 		$("#title1 .col").css("font-size", "40px");
 	}
-	$("#title1").fadeIn(5000)
+	$("#title1").fadeIn(2000);
 	// $("#title1").show();
 	// $(".wodry").wodry({
 	// 	animation: 'rotateY',
@@ -16,17 +16,17 @@ $(document).ready(function(){
 	// });
 	setTimeout(function(){
 		if($("body").outerWidth()<=576){
-			$("#title2").show().animate({fontSize:'15px'},3000);
+			$("#title2").show().animate({fontSize:'15px'},1000);
 		}else{
-			$("#title2").show().animate({fontSize:'20px'},3000);
+			$("#title2").show().animate({fontSize:'20px'},1000);
 		}
 		setTimeout(function(){
 			$("#fairy1").removeAttr("hidden");
 			$("#fairy2").removeAttr("hidden");
 			$("#fairy3").removeAttr("hidden");
 			$("#fairy4").removeAttr("hidden");
-		},3500)
-	},5500);
+		},1500)
+	},2500);
 });
 
 $(window).resize(function(){
