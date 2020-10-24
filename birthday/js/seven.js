@@ -1,7 +1,3 @@
-$(document).ready(function () {
-	$(".suprise").delay(1500).fadeIn(3500);
-});
-
 $(document).bind("mobileinit", function () {
 	if (navigator.userAgent.indexOf("Android") != -1) {
 		$.mobile.defaultPageTransition = 'none';
@@ -22,7 +18,7 @@ function imgLoad(img, callback) {
 	}, 50)
 }
 imgLoad(sevenImg, function () {
-	
 	$('.loading').remove();
+	$(".suprise").delay(1500).fadeIn(3500);
 });
 
