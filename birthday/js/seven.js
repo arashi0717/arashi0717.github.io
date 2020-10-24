@@ -16,10 +16,13 @@ $('.suprise').click(function () {
 });
 
 //Loading页面
-document.onreadystatechange = function () {
-	if (document.readyState == "complete") {
-		loadingFade();
-	}
+// document.onreadystatechange = function () {
+// 	if (document.readyState == "complete") {
+// 		loadingFade();
+// 	}
+// }
+sevenImg.onload = function(){
+	loadingFade();
 }
 
 function loadingFade() {
@@ -36,3 +39,4 @@ function loadingFade() {
 		opacity -= 0.4;
 	}, 100);
 }
+
