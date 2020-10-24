@@ -32,19 +32,13 @@ $(window).resize(function(){
 });
 
 $('#fairy1').click(function () {
-	setTimeout(function () {
-		location.href = "fairy.html";
-	}, 500);
+	location.href = "fairy.html";
 });
 
 $('#fairy2').click(function () {
-	setTimeout(function () {
-		location.href = "fairy.html";
-	}, 500);
+	location.href = "fairy.html";
 });
 
 $('#fairy4').click(function () {
-	setTimeout(function () {
-		location.href = "fairy.html";
-	}, 500);
+	location.href = "fairy.html";
 });
