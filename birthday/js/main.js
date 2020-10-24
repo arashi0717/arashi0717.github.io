@@ -16,7 +16,7 @@ $(document).ready(function(){
 		setTimeout(function(){
 			$(".fairy").fadeIn(2000);
 		},1500)
-	},4000);
+	},5000);
 });
 
 $(window).resize(function(){
@@ -41,4 +41,13 @@ $('#fairy2').click(function () {
 
 $('#fairy4').click(function () {
 	location.href = "fairy.html";
+});
+
+$(document).bind("mobileinit", function()   
+{   
+   if (navigator.userAgent.indexOf("Android") != -1)   
+   {   
+     $.mobile.defaultPageTransition = 'none';   
+     $.mobile.defaultDialogTransition = 'none';   
+   }   
 });
