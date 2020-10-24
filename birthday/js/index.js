@@ -24,4 +24,4 @@ window.onresize = function() {
      $.mobile.defaultPageTransition = 'none';   
      $.mobile.defaultDialogTransition = 'none';   
    }   
-});   
+});

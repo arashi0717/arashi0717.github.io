@@ -36,3 +36,12 @@ $(window).resize(function(){
 		$("#title .col").css("font-size", "40px");
 	}
 });
+
+$(document).bind("mobileinit", function()   
+{   
+   if (navigator.userAgent.indexOf("Android") != -1)   
+   {   
+     $.mobile.defaultPageTransition = 'none';   
+     $.mobile.defaultDialogTransition = 'none';   
+   }   
+});
