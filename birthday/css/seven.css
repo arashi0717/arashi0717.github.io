@@ -53,3 +53,62 @@ body :-ms-input-placeholder {
     height: 100%;
     overflow: hidden;
 }
+
+.messagebox{
+    width: 80%;
+    height: 80%;
+    max-width: 550px;
+    max-height: 686px;
+    margin: 4rem auto;
+    border: antiquewhite 1px solid;
+    border-radius: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0.99;
+    text-align: center;
+    position: relative;
+}
+
+.messagebox #userImg{
+    width: 100%;
+}
+
+.messagebox #userName{
+    color: #504f4f;
+    padding-top: 1rem;
+}
+
+.messagebox #line{
+    height: 0.2rem;
+    background-color: #ee9ca7;
+    margin-top: 20px;
+    margin-left: 34%;
+}
+
+.messagebox .message{
+    color: #504f4f;
+    margin:0 auto;
+    padding-top: 40px;
+    /* text-align: left; */
+    width: 80%;
+}
+.message div{
+    padding: 5px;
+}
+
+.message h6{
+    color: #eab3bb;
+}
+
+.message p{
+    font-size: 0.8rem;
+}
+
+.suprise{
+    text-align: center;
+    height: 45px;
+    background-color: antiquewhite;
+    border-radius: 3px;
+    line-height: 45px;
+    color: #504f4f;
+    display: none;
+}
