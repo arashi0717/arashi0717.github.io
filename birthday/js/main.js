@@ -19,6 +19,15 @@ $(document).ready(function(){
 	},5000);
 });
 
+$(document).bind("mobileinit", function()   
+{   
+   if (navigator.userAgent.indexOf("Android") != -1)   
+   {   
+     $.mobile.defaultPageTransition = 'none';   
+     $.mobile.defaultDialogTransition = 'none';   
+   }   
+});
+
 $(window).resize(function(){
 	if($("body").outerWidth()<=576){
 		$("#title1 div").css("font-size", "20px");
@@ -43,11 +52,6 @@ $('#fairy4').click(function () {
 	location.href = "fairy.html";
 });
 
-$(document).bind("mobileinit", function()   
-{   
-   if (navigator.userAgent.indexOf("Android") != -1)   
-   {   
-     $.mobile.defaultPageTransition = 'none';   
-     $.mobile.defaultDialogTransition = 'none';   
-   }   
+$('#fairy3').click(function(){
+	location.href = "seven.html";
 });
