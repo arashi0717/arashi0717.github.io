@@ -6,7 +6,7 @@ $(document).ready(function(){
 		$("#title1 div").css("font-size","30px");
 		$(".fairy span").css("font-size","20px");
 	}
-	$("#title1").fadeOut(3500);
+	$("#title1").show().delay(1000).fadeOut(3500);
 	setTimeout(function(){
 		if($("body").outerWidth()<=576){
 			$("#title2").show().animate({fontSize:'20px'},1000);
